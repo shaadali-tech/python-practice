@@ -11,19 +11,36 @@
 # git add .; git commit -m "Update project"; git push
 #Inheritance
 
-class Car:
-  def __init__(self,name,age):
-    self.name=name
-    self.age=age
+# class Car:
+#   def __init__(self,name,age):
+#     self.name=name
+#     self.age=age
 
-  def methods(self):
-    print(self.age)
-    print(self.name)
+#   def methods(self):
+#     print(self.age)
+#     print(self.name)
 
-class bmw(Car):
-  def move(self):
-    print("car is moving")
+# class bmw(Car):
+#   def move(self):
+#     print("car is moving")
 
-cars=bmw("Bmw",2500)
-cars.move()
-cars.methods()
+# cars=bmw("Bmw",2500)
+# cars.move()
+# cars.methods()
+
+# ENCAPSULATION
+
+class Student:
+
+    def __init__(self):
+
+        self.__marks = 95
+
+    def display(self):
+
+        print(self.__marks)
+
+
+s = Student()
+
+s.display()
