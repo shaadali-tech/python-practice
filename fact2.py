@@ -28,13 +28,25 @@
 
 # git add .; git commit -m "Update project"; git push
 
-n=int(input("Enter a number : "))
+# n=int(input("Enter a number : "))
 
-a=0
-b=1
+# a=0
+# b=1
 
-for i in range(n):
-  print(a,end=" ")
-  c=a+b
-  a=b
-  b=c
+# for i in range(n):
+#   print(a,end=" ")
+#   c=a+b
+#   a=b
+#   b=c
+
+#reverse a number
+
+n=int(input("Enter a number to reverse: "))
+
+rev=0
+while(n>0):
+  digit=n%10
+  rev=rev*10+digit
+  n=n//10
+
+print(rev)
